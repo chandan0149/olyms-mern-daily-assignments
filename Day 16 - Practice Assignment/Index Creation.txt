@@ -1,0 +1,28 @@
+Index Creation:
+db.Books.createIndex({ genre: 1 })
+db.Books.createIndex({ authorId: 1 })
+db.Books.createIndex({ "ratings.score": 1 })
+
+Dropped Index:
+db.Books.dropIndex("ratings.score_1")
+
+Aggregation Queries:
+
+1. Average Rating:
+[
+ { $unwind: "$ratings" },
+ { $group: { _id: "$title", averageRating: { $avg: "$ratings.score" } } }
+]
+
+2. Top 3 Books:
+[
+ { $unwind: "$ratings" },
+ { $group: { _id: "$title", averageRating: { $avg: "$ratings.score" } } },
+ { $sort: { averageRating: -1 } },
+ { $limit: 3 }
+]
+
+3. Books per Genre:
+[
+ { $group: { _id: "$genre", totalBooks: { $sum: 1 } } }
+]

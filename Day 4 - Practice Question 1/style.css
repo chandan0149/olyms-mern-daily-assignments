@@ -1,0 +1,60 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Login Box */
+.login-box {
+    background-color: #f6c28b;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* School Logo */
+.school-logo {
+    height: 45px;
+    width: auto;
+}
+
+/* Spring 1 Style Profile Box */
+.profile-container {
+    background-color: #f6c28b;   /* Spring 1 color */
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Student Image */
+.student-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+}
+
+/* Profile Text */
+.profile-container h4 {
+    margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .student-img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .school-logo {
+        height: 35px;
+    }
+}

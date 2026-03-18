@@ -1,0 +1,83 @@
+[{
+  "_id": {
+    "$oid": "69a58c62aa94058da2e9bc4f"
+  },
+  "title": "Harry Potter and the Sorcerer's Stone",
+  "genre": "Fantasy",
+  "publicationYear": 1997,
+  "authorId": {
+    "$oid": "69a58a50aa94058da2e9bc48"
+  },
+  "ratings": [
+    {
+      "user": "User1",
+      "score": 5,
+      "comment": "Amazing book!"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69a58c90aa94058da2e9bc51"
+  },
+  "title": "A Game of Thrones",
+  "genre": "Fantasy",
+  "publicationYear": 1996,
+  "authorId": {
+    "$oid": "69a58a64aa94058da2e9bc4a"
+  },
+  "ratings": [
+    {
+      "user": "User2",
+      "score": 4,
+      "comment": "Great storytelling!"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69a58cc1aa94058da2e9bc53"
+  },
+  "title": "Foundation",
+  "genre": "Science Fiction",
+  "publicationYear": 1952,
+  "authorId": {
+    "$oid": "69a58a75aa94058da2e9bc4c"
+  },
+  "ratings": [
+    {
+      "user": "User3",
+      "score": 5,
+      "comment": "Classic sci-fi!"
+    },
+    {
+      "user": "Alice",
+      "score": "4",
+      "comment": "Very interesting!"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69a58d01aa94058da2e9bc55"
+  },
+  "title": "I, Robot",
+  "genre": "Science Fiction",
+  "publicationYear": 1950,
+  "authorId": {
+    "$oid": "69a58a75aa94058da2e9bc4c"
+  },
+  "ratings": []
+},
+{
+  "_id": {
+    "$oid": "69a58d38aa94058da2e9bc57"
+  },
+  "title": "Harry Potter and the Chamber of Secrets",
+  "genre": "Fantasy",
+  "publicationYear": 1998,
+  "authorId": {
+    "$oid": "69a58a50aa94058da2e9bc48"
+  },
+  "ratings": []
+}]

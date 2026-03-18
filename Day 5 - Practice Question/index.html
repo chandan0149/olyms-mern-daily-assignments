@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog & Todo Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Blogging Platform</h1>
+
+        <!-- Create Post Section -->
+        <section class="create-post">
+            <h2>Create & Publish Post</h2>
+            <input type="text" id="title" placeholder="Enter Title">
+            <textarea id="body" placeholder="Enter Content"></textarea>
+            <button id="publishPost">Publish</button>
+        </section>
+
+        <!-- Blog Section -->
+        <section>
+            <h2>Blog Posts</h2>
+            <div id="posts">Loading posts...</div>
+        </section>
+
+        <!-- Todo Section -->
+        <section>
+            <h2>Todo List</h2>
+            <div id="todos">Loading todos...</div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e9f2ff);
+    margin: 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #33031a, #6610f2);
+}
+
+/* Navbar hover */
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0d6efd;
+}
+
+/* Product Cards */
+.product-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Smaller Images */
+.product-img {
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Price */
+.price {
+    font-size: 15px;
+    font-weight: bold;
+    color: #198754;
+}
+
+/* Newsletter */
+.newsletter-section {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #212529, #343a40);
+}

@@ -1,0 +1,33 @@
+BookVerseDB – MongoDB Assignment
+
+Database Created:
+BookVerseDB
+
+Collections:
+Authors
+Books
+Users
+
+Data Modeling:
+- One-to-Many relationship implemented using authorId reference in Books collection.
+- Embedded documents implemented using ratings array in Books collection.
+
+CRUD Operations Performed:
+1. Inserted new user (David)
+2. Retrieved Science Fiction books
+3. Updated publicationYear of Foundation
+4. Deleted one user record
+5. Added new rating using array update (equivalent to $push)
+
+Querying & Filtering:
+1. Books published after 2015:
+   { publicationYear: { $gt: 2015 } }
+
+2. Books of genre Fantasy:
+   { genre: "Fantasy" }
+
+3. Users joined within last 6 months:
+   { joinDate: { $gte: new Date("2025-09-01") } }
+
+4. Books with rating score greater than 4:
+   { "ratings.score": { $gt: 4 } }

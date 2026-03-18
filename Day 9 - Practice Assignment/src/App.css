@@ -1,0 +1,108 @@
+/* 🌈 Modern Gradient Background */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background-attachment: fixed;
+}
+
+/* ✨ Floating Light Effect */
+body::before {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255,255,255,0.15), transparent);
+  top: -100px;
+  left: -100px;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1), transparent);
+  bottom: -200px;
+  right: -200px;
+  z-index: -1;
+}
+
+/* 📚 Title Styling */
+.app-title {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+/* 🔍 Search Box */
+.search-box {
+  width: 400px;
+  margin: 30px auto;
+}
+
+.search-box input {
+  border-radius: 12px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+/* 🔘 Toggle Buttons */
+.toggle-buttons {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.toggle-buttons .btn {
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+/* 📦 Glass Card Style */
+.book-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.book-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+/* 📘 Book Image */
+.book-image {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* 💰 Price */
+.price {
+  color: #00ff88;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* ✍ Author Info Card */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  color: white;
+  border-radius: 20px;
+}
